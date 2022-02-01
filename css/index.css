@@ -13,12 +13,11 @@ body {
     font-weight: 400;
     font-size: 18px;
 }
-
+ 
 .navcontainer {
     width: 80%;
     margin: 0 auto;
 }
-
 
 header {
     background: black;
@@ -37,7 +36,7 @@ header::after {
 }
 
 nav {
-    float: right;
+    float: right;  
 }
 
 nav ul {
@@ -49,7 +48,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 70px;
-    padding-top: 60px;
+    padding-top: 30px;
     position: relative;
    
 }
@@ -90,6 +89,21 @@ nav a:hover::before {
     background: linear-gradient(rgba(0,0,0,0.445), rgba(0,0,0,0.411)), url("../images/hero_girl.jpg") no-repeat center/cover;
     color: white;
 }
+.info a {
+    padding: 20px;
+}
+
+
+.info a:hover {
+    
+    padding: 20px;
+    transform: scale(1.1);
+    transition: all ease-in-out 250ms;
+    cursor: pointer;
+    background-color: fuchsia;
+    
+    box-shadow:5px 5px 15px rgba(0,0,0,0.9);
+}
 
 .container {
     width: 90%;
@@ -128,11 +142,21 @@ nav a:hover::before {
     color: white
 }
 
+.container .info a:hover {
+    background-color: rgba(225, 0, 255, 0.959);
+}
+.sectionHead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin-top: 4rem;
+}
 .skillsCard {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 150px;
+    margin: 50px;
 
 }
 
@@ -197,7 +221,8 @@ nav a:hover::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 150px;
+    margin: 50px;
+   
 }
 
 
@@ -206,6 +231,7 @@ nav a:hover::before {
     background: url(../images/kids_case.jpg);
     border-radius: 5px;
     background-size: cover;
+    
 }
 
 .workcard-image1:hover {
