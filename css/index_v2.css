@@ -46,21 +46,24 @@ a {
 .header .nav {
     padding: 0 15px;
     color: #ffffff;
+    text-transform: capitalize;
+}
+
+.header .logo a {
+    font-size: 30px;
 }
 
 .header .nav ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .header .nav li a {
     display: block;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
     color: #ffffff;
     padding: 10px 0;
     transition: all 0.5s ease;
-    margin-right: 20px;
 }
 
 .header .nav li a::before {
@@ -96,7 +99,6 @@ a {
     border: none;
     display: none;
     margin-right: 15px;
-    
 }
 
 .nav-toggler:focus{
@@ -146,6 +148,88 @@ a {
     transform: rotate(135deg);
 }
 
+/*
+
+.navcontainer {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+header {
+    background: black;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 30px;
+    position: relative;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 28px;
+}
+
+
+nav a:hover {
+    color: fuchsia;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: cornflowerblue;
+
+    position: absolute;
+    bottom: 0;
+    width: 0;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+*/
 
 #hero {
     width: 100%;
@@ -182,7 +266,7 @@ a {
 }
 
 .container .info h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 
@@ -208,9 +292,8 @@ a {
 }
 
 .container .info a:hover {
-    background-color: white;
-    color: cornflowerblue;
-    font-weight: 600;
+    background-color: rgba(225, 0, 255, 0.959);
+    color:rgb(46, 46, 48)
 }
 
 
@@ -222,7 +305,7 @@ a {
     margin-top: 4rem;
 }
 
-
+/*
 .skillsCard {
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +318,7 @@ a {
 .card {
     display: grid;
     grid-template-columns: 450px;
-    grid-template-rows: 300px 200px 50px;
+    grid-template-rows: 200px 200px 80px;
     grid-template-areas: "image" "text";
 
     border-radius: 18px;
@@ -288,9 +371,9 @@ a {
     transform: scale(1.2);
     box-shadow:5px 5px 15px rgba(0,0,0,0.9);
 }
+*/
 
 
-/*NEW SKILLS
 .skillsSection {
     height: 100vh;
     display: flex;
@@ -366,7 +449,7 @@ a {
 .skillsContainer:hover .skillsCard {
     transform: rotateX(180deg);
 }
-*/
+
 
 .workCard {
     display: flex;
@@ -417,18 +500,6 @@ a {
     border-radius: 5px;
     background-size: cover;
 }
-
-.card a {
-    text-decoration: none;
-    display: inline-block;
-    background-color: cornflowerblue;
-    border-radius: 4px;
-    font-size: 1.5rem;
-    padding: 1.5rem, 2rem;
-    margin: 1rem;
-    color: white
-    
-} 
 
 .contact {
     position: relative;
@@ -579,7 +650,7 @@ a {
 footer {
     position: relative;
     width: 100%;
-    background: #2f3240;
+    background: rgb(46, 46, 48);
     min-height: 100px;
     padding: 20px 50px;
     display: flex;

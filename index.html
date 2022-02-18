@@ -7,21 +7,68 @@
 <body>
 
     <!-- Nav bar-->
+<!--<nav>
+    <div class="logo">
+        <img src="images/Standing.png" alt="logo" class="logo">  
+    </div> 
+    <ul class="nav-links">
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+</nav>
+
+
+    
     <header>
         <div class="navcontainer">
             <img src="images/Standing.png" alt="logo" class="logo">
-            <h3 id="mn">melissa naval</h3>
-            <nav class="navList">
+            <nav>
                 <ul>
                     <li><a href="#">About Me</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
             </nav>
             
         </div>
     </header>
+    -->
+<header class="header">
+    <div class="navcontainer">
+        <div class="row">
+            <div class="logo">
+                <img src="images/Standing.png" alt="logo" class="logo" height="80px">  
+            </div>
+            <button type="button" class="nav-toggler">
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">about me</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
 
 <!-- Hero -->
     <section id="hero">
@@ -41,6 +88,7 @@
 <div class="sectionTitle">
     <h1 class="sectionHead">My Skills</h1>
 </div>
+
 <section class="skillsCard">
  <div class="card">
      <div class="card-image1"></div>
@@ -83,18 +131,85 @@
 </div>
 </section>
 
+<!--NEW-->
+<!--
+<section class="skillsSection">
+    <div class="skillsContainer">
+        <div class="skillsCard">
+            <div class="front">
+                <div class="skillsContent">
+                    <img src="images/skills_ppl.jpg" />
+                    <h3>Research & Design</h3>
+                </div>
+            </div>
+            <div class="back">
+                <div class="skillsContent">
+                    <h3>Research & Design</h3>
+                    <p>User Research</p>
+                    <p>Sketching</p>
+                    <p>Wireframing</p>
+                    <p>Prototyping</p>
+                    <p>User Testing</p>
+                </div>
+            </div>
+        </div>     
+    </div>     
+
+    <div class="skillsContainer">
+        <div class="skillsCard">
+            <div class="front">
+                <div class="skillsContent">
+                    <img src="images/skills_tools.jpg" />
+                    <h3>Tools</h3>
+                </div>
+            </div>
+            <div class="back">
+                <div class="skillsContent">
+                    <h3>Tools</h3>
+                    <p>Miro</p>
+                    <p>Figma</p>
+                    <p>InVision</p>
+                    <p>Google Drive</p>
+                    <p>Visual Studio</p>
+                    <p>Zoom</p>
+                </div>
+            </div>
+        </div>     
+    </div>     
+
+    <div class="skillsContainer">
+        <div class="skillsCard">
+            <div class="front">
+                <div class="skillsContent">
+                    <img src="images/hero_hands.jpg" />
+                    <h3>Web Fundamentals</h3>
+                </div>
+            </div>
+            <div class="back">
+                <div class="skillsContent">
+                    <h3>Web Fundamentals</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript/JQuery</p>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>     
+    </div>     
+</section>
+-->
 <!-- Work -->
 
 <div class="sectionTitle">
     <h1 class="sectionHead">My Work</h1>
 </div>
-<section class="workCard">
+<section class="skillsCard">
     <div class="card">
         <div class="workcard-image1"></div>
         <div class="card-text">
         <h2 class="card-title">Backpacks 4 VIC Kids</h2>
         <p>A collaboration with other UX/UI Designers to redesign a nonprofit website with the goal of increasing user engagement</p>
-        <a href="" class="button">Read More</a>
+        <a href="#">&nbspRead More&nbsp</a>
         
     </div>
    </div>
@@ -105,7 +220,7 @@
        <div class="card-text">
        <h2 class="card-title">Department of Health</h2>
        <p>Part of a UI challenge to redesign a government agency website and showcase responsive web design</p>
-       <a href="" class="button">Read More</a>
+       <a href="#">&nbspRead More&nbsp</a>
    </div>
    </div>
    </div>
@@ -115,7 +230,7 @@
        <div class="card-text">
        <h2 class="card-title">Travel App</h2>
        <p>A solo project to create a travel app to make trip planning easier and more convenient for the user.</p>
-       <a href="" class="button">Read More</a>
+       <a href="#">&nbspRead More&nbsp</a>
    </div>
    </div>
    </div>
@@ -137,7 +252,7 @@
             <div class="box">
                 <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
                 <div class="text">
-                    <h3>Address</h3>
+                    <h3>Location</h3>
                     <p>Melbourne, Australia</p>
                 </div>
             </div>
@@ -158,7 +273,7 @@
         </div>
         <div class="contactForm">
             <form>
-                <h2>Send Message</h2>
+                <h2>Send me a message</h2>
                 <div class="inputBox">
                     <input type="text" name="" required="required">
                     <span>Full Name</span>
@@ -199,10 +314,7 @@
    </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
 </body>
-
-    <script src="/js/index.js"></script>
-
+<script src="/index.js"></script>
 </html>
